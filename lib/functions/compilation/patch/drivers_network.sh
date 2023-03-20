@@ -148,6 +148,7 @@ driver_rtl8811_rtl8812_rtl8814_rtl8821()
 
 		# attach to specifics tag or branch
 		local rtl8812auver="commit:450db78f7bd23f0c611553eb475fa5b5731d6497"
+		eee82ac1401e211a58a42cd89ab788b4f55040af
 
 		display_alert "Adding" "Wireless drivers for Realtek 8811, 8812, 8814 and 8821 chipsets ${rtl8812auver}" "info"
 
@@ -571,23 +572,23 @@ driver_uwe5622_allwinner()
 
 patch_drivers_network()
 {
-	display_alert "Patching network related drivers"
+	display_alert "Skip patching network related drivers"
 
-	driver_rtl8152_rtl8153
-	driver_rtl8189ES
-	driver_rtl8189FS
-	driver_rtl8192EU
-	driver_rtl8811_rtl8812_rtl8814_rtl8821
-	driver_xradio_xr819
-	driver_rtl8811CU_rtl8821C
-	driver_rtl8188EU_rtl8188ETV
-	driver_rtl88x2bu
-	driver_rtl88x2cs
-	driver_rtl8822cs_bt
-	driver_rtl8723DS
-	driver_rtl8723DU
-	driver_rtl8822BS
-	driver_uwe5622_allwinner
+	#driver_rtl8152_rtl8153
+	#driver_rtl8189ES
+	#driver_rtl8189FS
+	#driver_rtl8192EU
+	#driver_rtl8811_rtl8812_rtl8814_rtl8821
+	#driver_xradio_xr819
+	#driver_rtl8811CU_rtl8821C
+	#driver_rtl8188EU_rtl8188ETV
+	#driver_rtl88x2bu
+	#driver_rtl88x2cs
+	#driver_rtl8822cs_bt
+	#driver_rtl8723DS
+	#driver_rtl8723DU
+	#driver_rtl8822BS
+	#driver_uwe5622_allwinner
 
 	display_alert "Network related drivers patched" "" "info"
 }
